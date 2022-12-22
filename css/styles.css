@@ -1,0 +1,1027 @@
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(../fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gotham-Narrow";
+  src: url(../fonts/FontsFree-Net-GothamNarrow-Medium-1.ttf);
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../fonts/Gotham-Bold.ttf);
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(../fonts/Gotham-Book.ttf);
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(../fonts/Gotham-Medium.ttf);
+}
+
+.wrapper {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1040px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+._color {
+  background-color: #03115f;
+}
+.color_text {
+  font-family: "Gotham-Bold";
+  color: #03115f;
+}
+._fontfamily {
+  font-family: "Gotham-Book";
+}
+
+/* ----ШАПКА------------------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.bg__img {
+  background-image: url(../img/header/5daeb753a658ff46aa0195383dc17d90.jpg);
+  background-size: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+.header__container {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header__logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: calc(60% - 80px / 2);
+}
+.logo_text {
+  position: absolute;
+  width: 170px;
+  height: 26px;
+  left: 60px;
+  top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #dddde2;
+}
+.logo_text_2 {
+  position: absolute;
+  width: 170px;
+  height: 18px;
+  left: 60px;
+  top: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #989aa9;
+}
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+
+.menu {
+  padding: 10px 0px;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.menu__item {
+  margin: 0px 0px 0px 10px;
+  padding-right: 10px;
+  border-right: 2px solid #989aa9;
+}
+.menu__item:not(last-child) {
+  margin: 0px 10px 0px 0px;
+}
+.menu__link {
+  color: #dddde2;
+  font-weight: 325;
+  line-height: calc(19 / 14 * 100%);
+  font-family: "Gotham-Book";
+}
+.img_flag {
+  width: 28px;
+  height: 20px;
+  display: inline-flex;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px #ccc solid;
+}
+.img_search {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+@media (min-width: 400px) and (max-width: 960px) {
+  .achievements {
+    background-color: #03115f;
+  }
+}
+/* ----MAIN------------------------------- */
+.main {
+  flex: 1 1 auto;
+}
+/* ----MAIN TEXT------------------------------- */
+.ibg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+}
+.main-block__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 700px;
+  left: 150px;
+  top: 180px;
+}
+._container {
+  position: relative;
+}
+.main-block__title {
+  font-family: "Inter-SemiBold";
+  font-weight: 350;
+  font-size: 45px;
+  line-height: 43px;
+}
+.main_block__text {
+  font-family: "Inter-Regular";
+  color: #dddde2;
+  width: 420px;
+  height: 80px;
+  font-size: 15px;
+}
+/* ----MAIN BOXES------------------------------- */
+.benefits {
+  font-family: "Gotham-Bold";
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  height: 180px;
+  left: 200px;
+  width: 1000px;
+  top: 450px;
+}
+/* ----О НАС------------------------------- */
+.main__about_us {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.mini_text {
+  margin-top: 80px;
+  font-family: "Gotham-Medium";
+  font-size: 20px;
+  color: #35417f;
+}
+._about_us_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 10px;
+}
+._about_us-img {
+  display: flex;
+}
+@media (min-width: 400px) and (max-width: 960px) {
+  ._about_us_container {
+    flex-wrap: wrap;
+  }
+  ._about_us-img {
+    order: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .mini_text ._about_us_longread {
+    order: 1;
+  }
+}
+._about_us_longread {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 18px;
+}
+._about_us_title {
+  font-family: "Gotham-Bold";
+  font-size: 40px;
+  color: #03115f;
+  line-height: 50px;
+}
+._about_us_text {
+  color: #535670;
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  width: 360px;
+  line-height: 18px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+/* ----БЛОК С ИКОНКАМИ------------------------------- */
+._container_offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  width: 1080px;
+}
+._container_offer_list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+._container_offer_list_comp {
+  margin-bottom: 40px;
+}
+.comp_icon {
+  height: 80px;
+  width: 80px;
+  padding: 0px 10px 10px 0px;
+}
+.comp_title {
+  font-family: "Gotham-Book";
+  font-size: 22px;
+  background: linear-gradient(130.67deg, #1e74ec 6.5%, #002984 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.comp_text {
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  color: #535670;
+  font-weight: 325;
+  padding-top: 5px;
+}
+@media (min-width: 320px) and (max-width: 960px) {
+  ._container_offer_list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+  }
+  .comp_icon {
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.arrow_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: "Gotham-Book";
+  font-size: 14px;
+  color: #a960ab;
+}
+.arrow {
+  border: none;
+  width: 120px;
+}
+.arrow_img {
+  box-sizing: border-box;
+  width: 30px;
+  margin-top: 5px;
+}
+/* ----ЗУМ КАРТИНКИ------------------------------- */
+.bg_gray {
+  background-color: #e6e8ef;
+  width: 100%;
+  height: 400px;
+}
+.port {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+._container_port_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+  width: 1080px;
+  text-align: start;
+}
+._container_port_list_comp {
+  margin-top: 30px;
+  width: 330px;
+  height: 420px;
+}
+.port_img {
+  display: inline-block;
+  overflow: hidden;
+}
+.port_img img {
+  display: block;
+  transition-duration: 1s;
+}
+.port_img img:hover {
+  transform: scale(1.2);
+}
+.port_title {
+  font-family: "Gotham-Medium";
+  color: #35417f;
+  margin-top: 5px;
+}
+.port_text {
+  font-family: "Gotham-Book";
+  font-size: 13px;
+}
+.downlist_img {
+  display: inline-block;
+  overflow: hidden;
+}
+.downlist_img img {
+  display: block;
+  transition-duration: 1s;
+}
+.downlist_img img:hover {
+  transform: scale(1.2);
+}
+/* ----БЛОК ПРЕИМУЩЕСТВА------------------------------- */
+._container_plus {
+  margin-bottom: 40px;
+  width: 250px;
+}
+.plus_title {
+  font-family: "Gotham-Bold";
+  background: linear-gradient(130.67deg, #1e74ec 6.5%, #002984 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.plus_text {
+  color: #535670;
+  font-family: "Gotham-Book";
+  font-size: 14px;
+}
+/* ----КЛИЕНТЫ------------------------------- */
+.client_img {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  height: 100px;
+  column-gap: 40px;
+  margin-top: 30px;
+}
+/* ----БЛЮ ЛОК------------------------------- */
+.bg__img_2 {
+  background-image: url(../img/bg\ image.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 70px;
+}
+.contact_us {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeff1;
+  margin-top: 30px;
+  column-gap: 80px;
+  padding: 80px 90px 100px 90px;
+}
+.contact_title {
+  font-family: "Gotham-Bold";
+  color: #35417f;
+  font-size: 30px;
+}
+.blue_lock {
+  display: flex;
+  flex-direction: column;
+  background-color: #012c88;
+  padding: 30px;
+  width: 440px;
+  height: 330px;
+  text-align: start;
+  color: white;
+}
+.blue_lock_title {
+  font-family: "Gotham-Book";
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.blue_lock_under-title {
+  font-family: "Gotham-Book";
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.counrty {
+  display: flex;
+  font-family: "Gotham-Book";
+  padding: 10px 0px 10px 0px;
+}
+.slovenia {
+  padding-right: 30px;
+  font-size: 14px;
+}
+.slovenia_under {
+  font-size: 12px;
+}
+.social_img {
+  display: flex;
+  column-gap: 30px;
+  padding-top: 30px;
+}
+.soc_img_each {
+  width: 25px;
+  height: 25px;
+}
+
+/* Drop Down Styles
+================================ */
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  max-width: 800px;
+}
+.accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  width: 800px;
+  color: #535670;
+  padding: 15px 0px 20px 0px;
+}
+.panel {
+  font-family: "Gotham-Book";
+  font-size: 15px;
+  color: #75788d;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-out;
+  padding-left: 40px;
+}
+.accordion:after {
+  content: url(/img/Vector.svg);
+  display: inline-block;
+  flex: none;
+  transition: 0.4s;
+  position: absolute;
+  right: 300px;
+}
+.active:after {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+/* ----ПОДВАЛ------------------------------- */
+._color {
+  background-color: #03115f;
+}
+
+.modal {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.modal:target {
+    opacity: 1; 
+	  pointer-events: auto; 
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .7rem;
+    outline: 0;
+}
+.modal-header {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Gotham-Bold";
+    color: #012c88;
+}
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+    font-family: "Gotham-Book";
+    font-size: 18px;
+}
+
+/*-----Модальное окно-----*/
+._modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f7f7f7;
+}
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  background-color: white;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*-----ВТОРАЯ СТРАНИЦА КОМАНДА-----*/
+.bg__img_team {
+  background-image: url(../img/Команда/Rectangle\ 556.png);
+  background-size: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+.main_block__text_team {
+  font-family: "Inter-Regular";
+  color: #dddde2;
+  width: 420px;
+  height: 80px;
+  font-size: 13px;
+}
+.header__logo_team {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  top: calc(60% - 80px / 2);
+}
+.hat {
+  font-family: "Rubik-Regular";
+  font-size: 20px;
+  color: white;
+  margin-bottom: -10px;
+}
+.bg_img_team_down {
+  background-image: url(../img/Команда/unsplash_g1Kr4Ozfoac.png);
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 576px;
+  background-size: 100%;
+}
+
+/*-------------Контакты-----------*/
+.bg__img_contact {
+  background-image: url(../img/bg\ image\ contact.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 870px;
+}
+/*-------------Контакты-----------*/
+.bg__img_portfolio {
+  background-image: url(../img/Портфолио/unsplash_pb_lF8VWaPU.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+.bg_img_portfolio2 {
+  background-image: url(../img/Портфолио/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 576px;
+}
+/*------------Услуги---------*/
+.bg__img_service {
+  background-image: url(../img/Услуги/unsplash_voM1Z9cGPCU.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+.main-block__container_service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 700px;
+  left: 150px;
+  top: 130px;
+}
+/*-----------карусель-------*/
+.mySwiper{
+  overflow: hidden;
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 430px;
+  width: 300px;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+.swiper-slide {
+  background-color: #f8f9f9;
+  height: 450px;
+}
+.carousel_img{
+  width: 350px;
+  height: 240px;
+}
+.carousel_textbox {
+  margin: 20px;
+}
+.carousel_text {
+  font-family: "Inter-Regular";
+  font-size: 12px;
+  width: 290px;
+  color: #535670;
+}
+.swiper-prev {
+  cursor: pointer;
+  position: absolute;
+  left: -30px;
+  top: 420px;
+}
+.swiper-next {
+  cursor: pointer;
+  position: absolute;
+  right: -30px;
+  top: 420px;
+}
+.bg_grey {
+  background-color: #e6e8ef;
+  size: 100%;
+  height: 400px;
+}
+.service_list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+.service_list_img {
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+}
+/*---------Наши проекты-------*/
+.numbers_list {
+  display: flex;
+  margin-top: 100px;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 70px 60px 190px;
+}
+.number {
+  height: 90px;
+  width: 75px;
+  margin-bottom: 345px;
+}
+.spectr {
+  row-gap: 40px;
+}
+.spectr_each {
+  max-width: 450px;
+  margin-bottom: 70px;
+}
+.spectr_main-text {
+  font-family: "Gotham-Bold";
+  font-size: 40px;
+  background: linear-gradient(130.67deg, #1e74ec 6.5%, #002984 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.spectr_text {
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  color: rgba(83, 86, 112, 1);
+  margin-bottom: 10px;
+}
+.spectr_under-text {
+  font-family: "Gotham-Book";
+  font-size: 17px;
+  color: rgba(117, 120, 141, 1);
+  margin-bottom: 10px;
+}
+.spectr_imgs {
+  display: flex;
+  column-gap: 25px;
+}
+.spectr_img {
+  margin-bottom: 15px;
+}
+.spectr_smtext {
+  font-family: "Gotham-Book";
+  font-size: 13px;
+  max-width: 180px;
+  color: #75788d;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.bg_grey_2 {
+  background-color: rgba(230, 232, 239, 1);
+  size: 100%;
+  padding: 80px 0px 80px 0px;
+}
+/*--------Дополнительные услуги------*/
+.dop {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.dop_boxes {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+.dop_box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+}
+.dop_img {
+  height: 170px;
+}
+.dop_text {
+  padding: 26px;
+  color: #35417f;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  line-height: 24px;
+}
+.bg__img__service {
+  background-image: url(/img/Услуги/цифры/bg\ image\ number.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+._about_us_text_2 {
+  color: white;
+  font-family: "Gotham-Book";
+  margin-top: 10px;
+  font-size: 14px;
+}
+/*----------АНКЕТА--------*/
+.contact_us_main-text {
+  color: rgba(83, 86, 112, 1);
+  font-family: "Gotham-Bold";
+  font-size: 16px;
+  width: 250px;
+}
+.contact_us_text {
+  color: #75788d;
+  font-family: "Gotham-Book";
+  font-size: 12px;
+  line-height: 14px;
+  width: 220px;
+  margin-top: 5px;
+}
+.contact_us_steps {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeff1;
+  margin-top: 30px;
+  row-gap: 15px;
+  padding: 40px 90px 50px 90px;
+}
+.contact_us_step {
+  display: flex;
+  column-gap: 100px;
+  flex-direction: row;
+}
+.line {
+  border-bottom: 2px solid #dddde2;
+}
+/*-------------КАРЬЕРА---------*/
+.bg__img_career {
+  background-image: url(/img/Карьера/head.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+.career_main {
+  margin: 80px 0px 40px 250px;
+}
+._career_text {
+  font-family: "Gotham-Book";
+  font-size: 15px;
+  line-height: 19px;
+  color: rgba(83, 86, 112, 1);
+  margin-top: 14px;
+  max-width: 650px;
+}
+.accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  width: 800px;
+  color: #535670;
+  padding: 15px 0px 20px 0px;
+}
+.accordion:after {
+  content: url(/img/Vector.svg);
+  display: inline-block;
+  flex: none;
+  transition: 0.4s;
+  position: absolute;
+  right: 300px;
+}
+.active:after {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.panel_box {
+  flex-direction: column;
+  display: flex;
+    list-style-type: disc;
+    margin-block-start: 1em;
+}
+.panel_text {
+  font-family: "Gotham-Bold";
+  color: rgba(53, 65, 127, 1);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: medium;
+  display: inline-block;
+  text-align: start;
+}
+.panel_boxes {
+  display: flex;
+  gap: 7px;
+}
+.panel_list {
+  font-family: "Gotham-Book";
+  margin-bottom: 10px;
+  font-size: medium;
+  line-height: 18px;
+  color: rgba(83, 86, 112, 1);
+}
+.accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  width: 800px;
+  color: #535670;
+  padding: 15px 0px 20px 0px;
+}
+.accordion:after {
+  content: url(/img/Vector.svg);
+  display: inline-block;
+  flex: none;
+  transition: 0.4s;
+  position: absolute;
+  right: 300px;
+}
+.active:after {
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
